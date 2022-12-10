@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentHome">
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.example.examen.ui.home.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentCrearPropiedad"
+            app:destination="@id/fragmentCrearPropiedad" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentActualizarPropiedad"
+            app:destination="@id/fragmentActualizarPropiedad" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCrearPropiedad"
+        android:name="com.example.examen.ui.home.FragmentCrearPropiedad"
+        android:label="FragmentCrearPropiedad" >
+        <action
+            android:id="@+id/action_fragmentCrearPropiedad_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentActualizarPropiedad"
+        android:name="com.example.examen.ui.home.FragmentActualizarPropiedad"
+        android:label="FragmentActualizarPropiedad" >
+        <action
+            android:id="@+id/action_fragmentActualizarPropiedad_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
+        <argument
+            android:name="propiedad"
+            app:argType="com.example.examen.model.Propiedad" />
+    </fragment>
+</navigation>
