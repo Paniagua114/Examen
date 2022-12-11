@@ -6,10 +6,10 @@ import kotlinx.parcelize.Parcelize
 data class Propiedad (
     var id_propiedad: String,
     val nombre: String,
-    val precio: Int,
+    val precio: String,
     val disponibilidad: String,
     val ubicacion: String,
 ) : Parcelable {
     constructor():
-            this("", "", 0,"", "")
+            this("", "", "","", "")
 }

@@ -32,7 +32,7 @@ class FragmentActualizarPropiedad : Fragment() {
         _binding = FragmentActualizarPropiedadBinding.inflate(inflater, container, false)
 
         binding.etNombre.setText(args.propiedad.nombre)
-        binding.etPrecio.setText(args.propiedad.precio)
+        binding.etPrecio.setText(args.propiedad.precio).toString()
         binding.etDisp.setText(args.propiedad.disponibilidad)
         binding.etUbi.setText(args.propiedad.ubicacion)
 

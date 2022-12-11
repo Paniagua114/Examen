@@ -35,7 +35,7 @@ class FragmentCrearPropiedad : Fragment() {
 
     private fun agregarPropiedad() {
         val nombre = binding.etNombre.text.toString()
-        val precio = Integer.parseInt(binding.etPrecio.text.toString())
+        val precio = binding.etPrecio.text.toString()
         val disponibilidad = binding.etDisp.text.toString()
         val ubicacion = binding.etUbi.text.toString()
 
